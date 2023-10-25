@@ -46,7 +46,7 @@ function addListItem(task: Task) {
     list?.append(item)
 }
 
-function deleteListItem {
+function deleteListItem () {
     
 }
 
