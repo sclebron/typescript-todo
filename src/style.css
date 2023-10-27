@@ -1,4 +1,13 @@
+body {
+    background-color: C8E4B2;
+}
+
+#list-container {
+    background-color: 7EAA92;
+}
+
 #title {
+    color: white;
     font-weight: 200;
     text-align: center;
     font-size: 5vh;
@@ -6,7 +15,9 @@
 }
 
 #list {
+    background-color: 9ED2BE;
     text-align: center;
+    text-decoration: none;
 }
 
 #new-task-form {
