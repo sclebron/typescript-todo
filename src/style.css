@@ -1,9 +1,9 @@
 body {
-    background-color: C8E4B2;
+    background-color: #C8E4B2;
 }
 
 #list-container {
-    background-color: 7EAA92;
+    background-color: #7EAA92;
 }
 
 #title {
@@ -15,7 +15,7 @@ body {
 }
 
 #list {
-    background-color: 9ED2BE;
+    background-color: #9ED2BE;
     text-align: center;
     text-decoration: none;
 }
