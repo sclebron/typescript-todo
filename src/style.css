@@ -20,9 +20,9 @@ body {
 #list {
     background-color: #9ED2BE;
     text-align: center;
-    text-decoration: none;
+    list-style-type: none;
     width: 50vh;
-    position: relative;
+    margin-left: 25vh;
 }
 
 #new-task-form {

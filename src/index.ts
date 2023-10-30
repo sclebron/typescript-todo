@@ -16,7 +16,7 @@ tasks.forEach(addListItem)
 form?.addEventListener("submit", e => {{
     e.preventDefault()
 
-    deleteListItem(tasks, task);
+    // deleteListItem(tasks, task);
 
     if (input?.value == "" || input?.value == null) return 
 
@@ -48,13 +48,13 @@ function addListItem(task: Task) {
     list?.append(item)
 }
 
-function deleteListItem (tasks: Task[], task: Task) {
-    for (let i = 0; i < tasks.length; i++) {
-        if (task.completed) {
-            localStorage.removeItem("TASKS")
-        }
-    }   
-}
+// function deleteListItem (tasks: Task[], task: Task) {
+//     for (let i = 0; i < tasks.length; i++) {
+//         if (task.completed) {
+//             localStorage.removeItem("TASKS")
+//         }
+//     }   
+// }
 
 function saveTasks() {
     localStorage.setItem("TASKS", JSON.stringify(tasks))
