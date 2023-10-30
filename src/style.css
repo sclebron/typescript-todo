@@ -1,9 +1,12 @@
 body {
     background-color: #C8E4B2;
+    display: flex;
+    justify-content: center;
 }
 
 #list-container {
     background-color: #7EAA92;
+    width: 100vh;
 }
 
 #title {
@@ -18,6 +21,8 @@ body {
     background-color: #9ED2BE;
     text-align: center;
     text-decoration: none;
+    width: 50vh;
+    position: relative;
 }
 
 #new-task-form {
