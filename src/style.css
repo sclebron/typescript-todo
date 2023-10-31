@@ -8,7 +8,7 @@ body {
     background-color: #7EAA92;
     border-radius: 5px;
     width: 100vh;
-    height: 40vh;
+    height: 70vh;
     margin-top: 10vh;
 }
 
@@ -16,18 +16,24 @@ body {
     color: white;
     font-weight: 200;
     text-align: center;
-    font-size: 5vh;
+    font-size: 6vh;
     margin-top: 2vh;
-}
-
-#list {
-    background-color: #9ED2BE;
-    text-align: center;
-    list-style-type: none;
-    width: 50vh;
-    margin-left: 25vh;
 }
 
 #new-task-form {
     text-align: center;
+}
+
+#list {
+    background-color: #9ED2BE;
+    border-radius: 5px;
+    list-style-type: none;
+    font-size: 3vh;
+    text-align: left;
+    width: 50vh;
+    margin-left: 25vh;
+}
+
+#checkbox:checked {
+    accent-color: black;
 }
