@@ -6,7 +6,10 @@ body {
 
 #list-container {
     background-color: #7EAA92;
+    border-radius: 5px;
     width: 100vh;
+    height: 40vh;
+    margin-top: 10vh;
 }
 
 #title {
