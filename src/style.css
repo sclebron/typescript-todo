@@ -24,14 +24,24 @@ body {
     text-align: center;
 }
 
+#addBtn:hover {
+    cursor: pointer;
+}
+
 #list {
     background-color: #9ED2BE;
     border-radius: 5px;
     list-style-type: none;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     font-size: 3vh;
     text-align: left;
     width: 50vh;
     margin-left: 25vh;
+}
+
+#checkbox:hover {
+    cursor: pointer;
 }
 
 #checkbox:checked {

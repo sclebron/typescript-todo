@@ -48,13 +48,14 @@ function addListItem(task: Task) {
     list?.append(item)
 }
 
-// function deleteListItem (tasks: Task[], task: Task) {
-//     for (let i = 0; i < tasks.length; i++) {
-//         if (task.completed) {
-//             localStorage.removeItem("TASKS")
-//         }
-//     }   
-// }
+function deleteListItem (tasks: Task[], task: Task) {
+    //change this --> add a trash icon on right side of each list item, if the trash icon is clicked (onClick) then we run the deleteListItem function which deletes that list item from localStorage and make sure it no longer appears on list
+    for (let i = 0; i < tasks.length; i++) {
+        if (task.completed) {
+            localStorage.removeItem("TASKS")
+        }
+    }   
+}
 
 function saveTasks() {
     localStorage.setItem("TASKS", JSON.stringify(tasks))
