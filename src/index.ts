@@ -7,11 +7,21 @@ type Task = {
     createdAt: Date
 }
 
-const list = document.querySelector<HTMLUListElement>("#list")
-const form = document.querySelector<HTMLFormElement>("#new-task-form")
-const input = document.querySelector<HTMLInputElement>("#new-task-title")
+const list = document.getElementById("list") as HTMLUListElement
+const form = document.getElementById("new-task-form") as HTMLFormElement
+const input = document.getElementById("new-task-title") as HTMLInputElement
 const tasks: Task[] = loadTasks()
 tasks.forEach(addListItem)
+
+document.addEventListener("DOMContentLoaded", () => {
+    const dateDisplay = document.getElementById("date") as HTMLElement;
+
+    const today = new Date();
+    const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = today.toLocaleDateString(undefined, options);
+
+    dateDisplay.textContent = `${formattedDate}`;
+});
 
 form?.addEventListener("submit", e => {{
     e.preventDefault()
