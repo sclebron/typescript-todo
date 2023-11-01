@@ -36,7 +36,7 @@ form?.addEventListener("submit", e => {{
 function addListItem(task: Task) {
     const item = document.createElement("li")
     const label = document.createElement("label")
-    const trash = document.createElement("trash")
+    // const trash = document.createElement("trash")
     const checkbox = document.createElement("input")
     checkbox.addEventListener("change", () => {
         task.completed = checkbox.checked
@@ -46,7 +46,7 @@ function addListItem(task: Task) {
     checkbox.checked = task.completed
     label.append(checkbox, task.title)
     item.append(label)
-    trash.append(trash)
+    // trash.append(trash)
     list?.append(item)
 }
 
