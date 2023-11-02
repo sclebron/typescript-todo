@@ -25,7 +25,7 @@ body {
     text-align: center;
     font-weight: 200;
     font-size: 4vh;
-    margin-top: -2vh;
+    margin-top: -3vh;
 }
 
 #new-task-form {
@@ -48,10 +48,6 @@ body {
     margin-left: 13vh;
 }
 
-#checkbox:hover {
+/* .checkbox:hover {
     cursor: pointer;
-}
-
-#checkbox:checked {
-    accent-color: black;
-}
+} */

@@ -50,6 +50,7 @@ function addListItem(task: Task) {
     const checkbox = document.createElement("input")
     checkbox.addEventListener("change", () => {
         task.completed = checkbox.checked
+        checkbox.style.accentColor = 'black'
         saveTasks()
     })
     checkbox.type = "checkbox"
