@@ -62,6 +62,7 @@ function addListItem(task: Task) {
 
     trash.addEventListener("click", () => {
         list?localStorage.removeItem("TASKS")
+        
     })
 }
 
