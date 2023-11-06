@@ -59,6 +59,10 @@ function addListItem(task: Task) {
     label.append(checkbox, task.title, trash)
     item.append(label)
     list?.append(item)
+
+    trash.addEventListener("click", () => {
+        list?localStorage.removeItem("TASKS")
+    })
 }
 
 function deleteListItem (tasks: Task[], task: Task) {

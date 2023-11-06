@@ -48,6 +48,7 @@ body {
     margin-left: 13vh;
 }
 
-/* .checkbox:hover {
-    cursor: pointer;
-} */
+#label {
+    display: flex;
+    justify-content: space-between;
+}
