@@ -55,14 +55,14 @@ function addListItem(task: Task) {
     })
     checkbox.type = "checkbox"
     checkbox.checked = task.completed
-    trash.innerHTML = '&#128465';
+    // trash.innerHTML = '&#128465';
     label.append(checkbox, task.title, trash)
     item.append(label)
     list?.append(item)
 
-    trash.addEventListener("click", () => {
-        localStorage.removeItem("TASKS")
-    })
+    // trash.addEventListener("click", () => {
+    //     localStorage.removeItem("TASKS")
+    // })
 }
 
 function deleteListItem (tasks: Task[], task: Task) {
