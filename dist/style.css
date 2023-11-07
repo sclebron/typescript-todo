@@ -1,0 +1,58 @@
+body {
+    background-color: #C8E4B2;
+    display: flex;
+    justify-content: center;
+}
+
+#list-container {
+    background-color: #7EAA92;
+    border-radius: 5px;
+    width: 80vh;
+    height: 75vh;
+    margin-top: 10vh;
+}
+
+#title {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    font-size: 6vh;
+    margin-top: 2vh;
+}
+
+#date {
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    font-size: 4vh;
+    margin-top: -3vh;
+}
+
+#new-task-form {
+    text-align: center;
+}
+
+#addBtn:hover {
+    cursor: pointer;
+}
+
+#list {
+    background-color: #9ED2BE;
+    border-radius: 5px;
+    list-style-type: none;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 3vh;
+    text-align: left;
+    width: 50vh;
+    margin-left: 13vh;
+}
+
+#label {
+    display: flex;
+    justify-content: space-between;
+}
+
+#span:hover {
+    cursor: pointer;
+}
