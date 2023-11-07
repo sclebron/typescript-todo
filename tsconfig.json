@@ -1,5 +1,5 @@
 {
-  "include": ["src", "types", "static.d.ts", "index.ts"],
+  "include": ["src", "types", "types/static.d.src/index.tsdex.ts"],
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
