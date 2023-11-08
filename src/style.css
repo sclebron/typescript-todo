@@ -48,9 +48,9 @@ body {
     margin-left: 13vh;
 }
 
-#label {
+#trash {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #span:hover {
