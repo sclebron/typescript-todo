@@ -54,19 +54,19 @@ function addListItem(task: Task) {
         saveTasks()
     })
     checkbox.type = "checkbox"
+    checkbox.style.cursor = 'pointer';
     checkbox.checked = task.completed
     trash.innerHTML = '&#128465';
+    trash.style.cursor = 'pointer';
+
+    trash.addEventListener("click", () => {
+        deleteListItem(task);
+        item.remove();
+    });
+
     label.append(checkbox, task.title, trash)
     item.append(label)
     list?.append(item)
-
-    // trash.addEventListener("click", () => {
-    //     localStorage.removeItem("TASKS")
-    // })
-}
-
-function deleteListItem (tasks: Task[], task: Task) {
-    //change this --> add a trash icon on right side of each list item, if the trash icon is clicked (onClick) then we run the deleteListItem function which deletes that list item from localStorage and make sure it no longer appears on list
 }
 
 function saveTasks() {
